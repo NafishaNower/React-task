@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="form-content">
+                <form id="userForm">
+                    <div class="form-fields" id="formFields">
+                        <div class="field-group">
+                            <div class="input-wrapper">
+                                <input type="text" class="input-field" placeholder="Enter name">
+                                <select class="select-field">
+                                    <option value="">Select option</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="error-messages">
+                                <span class="error input-error"></span>
+                                <span class="error select-error"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button type="button" id="addFields" class="add-btn">+</button>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+
+                <div class="form-state">
+                    <h3>Form State:</h3>
+                    <div class="table-wrapper">
+                        <table id="stateTable">
+                            <thead>
+                                <tr>
+                                    <th>Field Number</th>
+                                    <th>Name</th>
+                                    <th>Option</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
